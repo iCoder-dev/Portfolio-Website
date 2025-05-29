@@ -1,0 +1,11 @@
+Name: Furaat binte Saad
+Role: Front-End Web Developer
+Logo: Furaat binte Saad
+
+Navbar {Home, About Me, Resume, Hire Me}
+
+Links {Gmail, instagram, linkedin, github}
+
+COLOR PALETTE {
+    glow golden neon
+}

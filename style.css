@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #0E0E10;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------- */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 3.5rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0 0 5%;
+    color: gray;
+}
+.name{
+    color: grey;
+    margin: 7px;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: "Underdog", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+.name a{
+     text-decoration: none;
+     color: grey;
+}
+
+p {
+    font-size: 2.2rem;
+}
+
+h1{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 3.1rem;
+    font-family: "Underdog", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid beige;
+    width: 0;
+    animation: 
+        slow-infinite-typing 8s steps(25, end) infinite,
+        cursor-blink 1s step-end infinite;
+}
+
+@keyframes slow-infinite-typing {
+    0% { 
+        width: 0; 
+    }
+    40% { 
+        width: 100%; 
+    }
+    60% {
+        width: 100%;
+    }
+    100% { 
+        width: 0; 
+    }
+}
+
+/* Cursor blinking animation */
+@keyframes cursor-blink {
+    0%, 50% { 
+        border-color: #333; 
+    }
+    51%, 100% { 
+        border-color: transparent; 
+    }
+}
+
+.para2.keep-cursor {
+    animation: 
+        typing 3.5s steps(10, end) forwards,
+        cursor-blink 1s step-end infinite;
+}
+
+.info .links{
+    display: inline-block;
+    margin-top: 2rem;
+}
+.links .social-link{
+    color: beige;
+    padding-left: 1.2rem;
+}
+.social-link:hover{
+    color: gray;
+}
+
+img {
+    border-radius: 50%;
+    height: 350px;
+    width: 300px;
+    flex-shrink: 0;
+    margin-top: 7%;
+}
+/* -------------------------------- */
+.aboutme{
+    display: flex;
+    color: beige;
+    margin: 3.5rem;
+    margin-top: 11rem;
+    gap: 3rem;
+}
+.aboutme p{
+    font-size: 1.25rem;
+    margin-top: 4%;
+    padding: 1.25rem;
+    text-align: center;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    width: 60%;
+    height: 60%;
+}
+.aboutme img{
+    margin-top: 0;
+    margin-left: 6%;
+}
+.aboutme span{
+    background-color: beige;
+    color: #333;
+}
+/* ------------------------------- */
+.intro {
+    color: #333;
+    margin-top: 2rem; 
+    border: 5px solid beige;
+    border-radius: 1rem;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    max-width: 700px;
+    width: 100%;
+}
+
+.paraintro {
+    background-color: beige;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 0; 
+}
+
+/* --------------------------------- */
+.skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 80%;
+    color: beige;
+    font-size: 1.75rem;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    gap: 2rem;
+    /* margin: 3rem; */
+    margin-left: 8%;
+}
+.skill, .project{
+    color: grey;
+    margin:7% 0 3% 9%;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: "Underdog", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+.skills p, h4 {
+    font-size: 1.25rem;
+    border: 1px solid beige;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0; 
+}
+/* ----------------------------------------------- */
+.projects{
+    color: beige;
+    margin:0 0 3% 8.5%;
+    width: 80%;
+}
+.card1{
+    display: flex;
+    flex-wrap: wrap;
+    height: 220px;
+    gap: 1rem;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+}
+h4{
+    border: none;
+}
+.desc p{
+    font-size: 1.2rem;
+    margin:0 1.3rem;
+}
+.card1 .tech1,
+.card1 .link1{
+    display: inline-block;
+    width: 20%;
+    margin-top: 1.3rem; 
+    font-size: 0.9rem;
+    border-radius: 6%;
+    padding: 0.5rem;
+} 
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.1rem 0 0 0.3rem;
+}
+.tech1 {
+    background-color: #333;
+}
+.link1 {
+    margin:0 1.5rem;
+    text-decoration: none;
+    color: beige;
+    background-color: #333;
+    text-align: center;
+}
+.link1:hover{
+    transform: scale(1.02);
+    color: #333;
+    background-color: beige;
+}
+
+.preview1{
+    border-radius: 5%;
+    height: 220px;
+    width: 250px;
+    margin-top: 0;
+}
+/* ---------------------------------------------- */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px dotted beige;
+    color: beige;
+    margin: 3rem;
+}
+.contact p{
+    font-style: italic;
+    font-size: 1rem;
+    margin: 7% 7% 1% 7%;
+}
+.contact h2{
+    font-size: 4rem;
+    margin: 0 7% 1% 10%;
+}
+.contact h3{
+    margin: 0 7% 1% 10%;
+}
+.contact h3 a{
+    text-decoration: none;
+    color: beige;
+}
+/* ------------Media Quieries----------------------- */
+@media (max-width: 1024px) {
+    .name {
+        margin-left: 0;
+    }
+    .info {
+        order: 1;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Image,
+    #img2 {
+        margin: 2rem auto 0;
+        max-width: 80%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+    .intro {
+        margin-top: 3% !important;
+    }
+    .aboutme {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5rem auto;
+        gap: 2rem;
+    }
+    .aboutme img {
+        margin: 0 auto;
+        max-width: 80%;
+        height: auto;
+        display: block;
+    }
+    .aboutme p {
+        width: 90%;
+        padding: 1rem;
+    }
+    .skill{
+        margin-left: 28%;
+    }
+    .project{
+        margin-left: 39%;
+        margin-top: 25%;
+    }
+     .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .preview1 {
+        width: 90%;
+        height: auto;
+    }
+    .desc {
+        width: 90%;
+        text-align: center;
+    }
+    .desc p,
+    .desc .link1 {
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .tech-stack {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;  
+        gap: 0.5rem;     
+        padding: 0.5rem 0;
+    }
+    .tech1 {
+        white-space: nowrap; 
+        flex: 3 0 auto;       
+        width: auto;        
+    }
+    .tech-stack::-webkit-scrollbar {
+        height: 6px;
+    }
+    .tech-stack::-webkit-scrollbar-thumb {
+        background: beige;
+        border-radius: 3px;
+    }
+    .tech-stack::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+
+@media (max-width: 420px) {
+    .name {
+        color: beige;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .Image {
+        display: block;
+        margin: 2rem auto 0;
+        max-width: 85%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .info {
+        text-align: center;
+        width: 95%;
+        margin: 1.5rem auto;
+        align-items: center;
+    }
+
+    .intro {
+        margin-top: 2rem;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .skill{
+        margin-left: 12%;
+    }
+    .project{
+        margin-left: 35%;
+    }
+    .contact h2{
+        font-size: 3rem;
+        margin: 2%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .para2 {
+        font-size: 1.4rem;
+        border-right-width: 2px;
+        margin-bottom: 3%;
+    }
+    .info {
+        width: 90%;
+        margin: 2rem auto;
+        text-align: center;
+        align-items: center;
+    }
+    .intro {
+        margin-top: 3rem; 
+        width: 90%;
+    }
+    .name {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .Image {
+        max-width: 90%;
+        height: auto;
+        margin: 2rem auto 0;
+        display: block;
+    }
+}
+
